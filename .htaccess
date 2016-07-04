@@ -1,0 +1,23 @@
+RewriteEngine on
+
+#unless directory, remove trailing slash
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+#resolve .php file for extensionless php urls
+
+#redirect external .php requests to extensionless url
+#RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+/)*[^.#?\ ]+\.php([#?][^\ ]*)?\ HTTP/
+#RewriteRule ^(([^/]+/)*[^.]+)\.php $1 [R=301,L]
+
+DirectoryIndex index.php
+
+php_value upload_max_filesize 10240000
+php_value post_max_size 10240000
+php_value max_input_time 300
+php_value max_execution_time 300
+php_value html_errors On
