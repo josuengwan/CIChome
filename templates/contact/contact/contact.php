@@ -1,5 +1,5 @@
 <?php
-        include_once $_SERVER['DOCUMENT_ROOT'].'/home/library/common.php';
+ 	include_once $_SERVER['DOCUMENT_ROOT'].'/home/library/common.php';
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/home/assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="/home/assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="/home/assets/css/contact.css">
+ 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 <!-- End Of Footer -->
@@ -23,12 +24,16 @@
 	            <td>
 	                <div class="contact-item">
 	                    <div class="title">Contact</div>
-	                    <div class="bar"></div>
+	              <div class="bar"></div>		
 	                </div>
 	            </td>
 	        </tr>
 	       <tr style="height:350px;">
-	           <td><div id="map" ></div></td>
+	           <td>
+			<div id="map" >
+			<iframe src="https://www.google.com/maps/place/36%C2%B037'17.0%22N+127%C2%B017'10.8%22E/@36.6212322,127.2851293,17.25z/data=!4m5!3m4!1s0x0:0x0!8m2!3d36.621386!4d127.286347?hl=en-US"width="600"height="400"></iframe> <!-- googleMapAPI-->
+			</div>
+		  </td>
 	       </tr>
 	   </table>
     </div>
@@ -82,7 +87,7 @@
 
 <script src="/home/assets/vendor/jquery-1.11.3.min.js"></script>
 <script src="/home/assets/js/header.js"></script>
-<script type="text/javascript" src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=756db721b31636565a3f43ae98ffbb46"></script>
+
 <script src="/home/assets/js/contact.js"></script>
 <!-- End Of Footer-->
 
@@ -91,10 +96,8 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-66909995-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </body>
 </html>
