@@ -29,7 +29,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/home/library/common.php';
                 </td>
             </tr>
             <tr style="height:350px;">
-                <td><<div id="map"style="width:70%; height:350px;"></div></td>
+                <td><div id="map"style="width:70%; height:350px;"></div></td>
             </tr>
         </table>
     </div>

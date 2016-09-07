@@ -9,6 +9,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
+        zoom: 17,
         title: "Here! CIC"
     });
 }
