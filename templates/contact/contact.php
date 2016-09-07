@@ -88,9 +88,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/home/library/common.php';
 <script src="/home/assets/js/contact.js"></script>
 <!-- End Of Footer-->
 
-<script>
-
-</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ5ks45D7YdnhGZQuJvc6IpQY8dsRW920&callback=initMap"
         async defer></script>
 </body>

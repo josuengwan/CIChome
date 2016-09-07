@@ -1,12 +1,14 @@
-var myLatlng = new google.maps.LatLng(36.621402,127.286354);
-var mapOptions = {
-    zoom: 4,
-    center: myLatlng
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+function initMap() {
+    var myLatLng = {lat: 36.621402, lng: 127.286354};
 
-var marker = new google.maps.Marker({
-    position: myLatlng,
-    title:"Here! CIC"
-});
-marker.setMap(map);
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: "Here! CIC"
+    });
+}
