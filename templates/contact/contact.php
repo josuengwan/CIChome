@@ -89,19 +89,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/home/library/common.php';
 <!-- End Of Footer-->
 
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-66909995-1', 'auto');
-    ga('send', 'pageview');
-    var map;
-    function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 36.621402, lng: 127.286354},
-            zoom: 17
-        });
-    }
 
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ5ks45D7YdnhGZQuJvc6IpQY8dsRW920&callback=initMap"
